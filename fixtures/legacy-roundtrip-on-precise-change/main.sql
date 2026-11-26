@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE "closed_totals" (month TEXT PRIMARY KEY, issued_seconds INTEGER, through INTEGER);
+INSERT INTO "closed_totals" VALUES('03',2717,2);
+CREATE TABLE "legacy_meter" (id TEXT PRIMARY KEY, month TEXT, units INTEGER, notes TEXT, rev INTEGER);
+INSERT INTO "legacy_meter" VALUES('x1','03',2,'核对',1);
+INSERT INTO "legacy_meter" VALUES('x2','03',1,'待签',1);
+INSERT INTO "legacy_meter" VALUES('x3','04',3,'单项',2);
+CREATE TABLE "modern_meter" (id TEXT PRIMARY KEY, month TEXT, seconds INTEGER, items TEXT, notes TEXT, rev INTEGER);
+INSERT INTO "modern_meter" VALUES('x1','03',1817,'[["home",1116],["phone",701]]','核对',2);
+INSERT INTO "modern_meter" VALUES('x3','04',2701,'[["home",2701]]','单项',3);
+COMMIT;

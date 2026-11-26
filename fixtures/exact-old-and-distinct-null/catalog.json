@@ -1,0 +1,15 @@
+{
+  "case": "exact-old-and-distinct-null",
+  "files": {
+    "main": {
+      "sql": "main.sql",
+      "tables": {
+        "legacy_meter": 1,
+        "modern_meter": 0,
+        "closed_totals": 0
+      }
+    }
+  },
+  "event_count": 4,
+  "limits": {}
+}

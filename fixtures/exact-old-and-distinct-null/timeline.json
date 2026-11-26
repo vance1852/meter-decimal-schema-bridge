@@ -1,0 +1,43 @@
+[
+  {
+    "at": 1,
+    "action": "legacy_read",
+    "args": [
+      "old",
+      "exact",
+      1
+    ]
+  },
+  {
+    "at": 2,
+    "action": "legacy_write",
+    "args": [
+      "keep",
+      "exact",
+      1,
+      {
+        "units": 2
+      }
+    ]
+  },
+  {
+    "at": 3,
+    "action": "legacy_write",
+    "args": [
+      "clear",
+      "exact",
+      2,
+      {
+        "notes": null
+      }
+    ]
+  },
+  {
+    "at": 4,
+    "action": "read_month",
+    "args": [
+      "05",
+      "current"
+    ]
+  }
+]

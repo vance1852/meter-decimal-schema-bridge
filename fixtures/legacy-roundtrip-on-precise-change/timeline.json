@@ -1,0 +1,137 @@
+[
+  {
+    "at": 3,
+    "action": "legacy_read",
+    "args": [
+      "terminal-a",
+      "x1",
+      2
+    ]
+  },
+  {
+    "at": 4,
+    "action": "modern_write",
+    "args": [
+      "p4",
+      "x1",
+      2,
+      {
+        "seconds": 1901,
+        "items": [
+          [
+            "home",
+            1200
+          ],
+          [
+            "phone",
+            701
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "at": 5,
+    "action": "legacy_write",
+    "args": [
+      "p5",
+      "x1",
+      2,
+      {
+        "units": 2,
+        "notes": "只记住户反馈"
+      }
+    ]
+  },
+  {
+    "at": 6,
+    "action": "legacy_read",
+    "args": [
+      "terminal-b",
+      "x1",
+      4
+    ]
+  },
+  {
+    "at": 7,
+    "action": "legacy_write",
+    "args": [
+      "p7",
+      "x1",
+      4,
+      {
+        "units": 3,
+        "duration_intent": "replace"
+      }
+    ]
+  },
+  {
+    "at": 8,
+    "action": "modern_write",
+    "args": [
+      "p8",
+      "x1",
+      4,
+      {
+        "seconds": 1777,
+        "items": [
+          [
+            "home",
+            1777
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "at": 9,
+    "action": "legacy_write",
+    "args": [
+      "p9",
+      "x2",
+      1,
+      {
+        "notes": null
+      }
+    ]
+  },
+  {
+    "at": 10,
+    "action": "evaluate_cutover",
+    "args": [
+      "all"
+    ]
+  },
+  {
+    "at": 11,
+    "action": "restart",
+    "args": [
+      "meter"
+    ]
+  },
+  {
+    "at": 12,
+    "action": "read_month",
+    "args": [
+      "03",
+      "issued"
+    ]
+  },
+  {
+    "at": 13,
+    "action": "read_month",
+    "args": [
+      "03",
+      "current"
+    ]
+  },
+  {
+    "at": 14,
+    "action": "legacy_read",
+    "args": [
+      "terminal-a",
+      "x3",
+      3
+    ]
+  }
+]

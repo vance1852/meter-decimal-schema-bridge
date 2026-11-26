@@ -1,0 +1,15 @@
+{
+  "case": "legacy-roundtrip-on-precise-change",
+  "files": {
+    "main": {
+      "sql": "main.sql",
+      "tables": {
+        "legacy_meter": 3,
+        "modern_meter": 2,
+        "closed_totals": 1
+      }
+    }
+  },
+  "event_count": 12,
+  "limits": {}
+}
